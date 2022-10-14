@@ -112,9 +112,11 @@ li {
   Header styling starts here
 =================================*/
 
-header {
+.banner-section {
   background: url(https://via.placeholder.com/1350x500.png?) no-repeat center center;
   background-size: cover;
+  width: 100%;
+  height: auto;
 }
 
 .logo img {
