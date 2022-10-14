@@ -111,6 +111,12 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+header { 
+  width: 100%;
+  position: absolute; 
+}
+
+header .wrapper { padding-top: 14px; }
 
 .banner-section {
   background: url(https://via.placeholder.com/1350x500.png?) no-repeat center center;
@@ -151,7 +157,39 @@ li {
     margin: 2px;
 }
 
-.nav-links { display: none; }
+.nav-links,
+.tel-section { display: none; }
+
+.banner-section { display: absolute; }
+
+header .wrapper {
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo 
+{
+  display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.left-section { 
+  padding-top: 70px;
+    color: #fff;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+ }
+
+form { padding-top: 30px; }
+
+h1 
+{
+  text-transform: capitalize;
+    color: #fff;
+}
 /*=================================
   Header styling ends here
 =================================*/  
