@@ -112,7 +112,17 @@ li {
   Header styling starts here
 =================================*/
 
+header {
+  background: url(https://via.placeholder.com/1350x500.png?) no-repeat center center;
+  background-size: cover;
+}
 
+.logo img {
+  width: 25px;
+  height: 25px;
+  border: 1px solid;
+  border-radius: 50%;
+}
 
 
 
