@@ -94,6 +94,13 @@ li {
   display: inline-block;
   list-style-type: none;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Common styling */
 .grey { color: #666; }
 .cap { text-transform: capitalize; }
@@ -118,12 +125,6 @@ header {
 
 header .wrapper { padding-top: 14px; }
 
-.banner-section {
-  width: 100%;
-  height: auto;
-  background: url(https://via.placeholder.com/1350x500.png?) no-repeat center center / cover;
-}
-
 .logo img {
   width: 25px;
   height: 25px;
@@ -132,8 +133,8 @@ header .wrapper { padding-top: 14px; }
 }
 
 .hamburger {
-  width: 20px;
-  height: 14px;
+  width: 30px;
+  height: 24px;
   padding: 6px;
   border: 1p solid;
   border-radius: 3px;
@@ -155,11 +156,6 @@ header .wrapper { padding-top: 14px; }
   text-indent: -9999px;
 }
 
-.nav-links,
-.tel-section { display: none; }
-
-.banner-section { display: absolute; }
-
 header .wrapper {
   display: flex;
   align-items: center;
@@ -173,15 +169,53 @@ header .wrapper {
   column-gap: 10px;
 }
 
+.nav-links,
+.tel-section { display: none; }
+
+/*=================================
+  Header styling ends here
+=================================*/  
+
+/*=================================
+  main styling starts here
+=================================*/
+
+/*banner section start*/
+.banner-section {
+  width: 100%;
+  height: auto;
+  background: url(https://via.placeholder.com/1350x500.png?) no-repeat center center / cover;
+}
+
+.banner-section { 
+  display: absolute;
+  padding: 30px 0;
+ }
+
 .left-section { 
   width: 80%;
-  padding-top: 70px;
+  padding: 70px 0 25px 0;
   margin: 0 auto;
   color: #fff;
   text-align: center;
  }
 
-form { padding-top: 30px; }
+ form { padding: 17px 8%; }
+
+ form p:nth-of-type(1)::first-letter {
+   text-transform: capitalize;
+ }
+
+ form p:nth-of-type(1) {
+   font-size: 18px;
+   margin-bottom: 10px;
+ }
+
+ form p:nth-of-type(2) {
+  margin-bottom: 15px;
+  font-size: 13px;
+  line-height: 17px;
+ }
 
 h1 
 {
@@ -199,21 +233,35 @@ h1
   text-transform: capitalize;
   font-size: 13px;
 }
-/*=================================
-  Header styling ends here
-=================================*/  
 
-/*=================================
-  main styling starts here
-=================================*/
+form {
+  border-radius: 5px;
+  background: #fff;
+}
 
+select { width: 80%; }
 
+.amounts { margin-bottom: 10px; }
+.calender { margin-bottom: 15px; }
 
+form p:last-of-type { 
+  margin-bottom: 10px;
+  font-size: 13px;
+ }
 
+ form a {
+  width: 80%;
+  padding: 5px 6%;
+  background: #33D4D6;
+  font-size: 14px;
+ }
+/*banner section end*/
 
+/*what section start*/
 
+h2 { font-size: 18px; }
 
-
+/*what section end*/
 /*=================================
   main styling ends here
 =================================*/
