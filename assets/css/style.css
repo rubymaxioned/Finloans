@@ -119,10 +119,10 @@ header {
 header .wrapper { padding-top: 14px; }
 
 .banner-section {
-  background: url(https://via.placeholder.com/1350x500.png?) no-repeat center center;
-  background-size: cover;
   width: 100%;
   height: auto;
+  background: url(https://via.placeholder.com/1350x500.png?) no-repeat center center;
+  background-size: cover;
 }
 
 .logo img {
@@ -134,27 +134,27 @@ header .wrapper { padding-top: 14px; }
 
 .hamburger {
   width: 25px;
-    height: 17px;
-    padding: 6px;
-    color: #fff;
-    background-color: #808080;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1p solid;
-    border-radius: 3px;
+  height: 17px;
+  padding: 6px;
+  border: 1p solid;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #808080;
+  color: #fff;
 }
 
 .bar {
+  width: 19px;
+  height: 2px;
+  margin: 3px;
+  padding: 0px;
+  margin: 2px;
   display: block;
-    width: 19px;
-    height: 2px;
-    margin: 3px;
-    background-color: #3B3B3B;
-    padding: 0px;
-    text-indent: -9999px;
-    margin: 2px;
+  background-color: #3B3B3B;
+  text-indent: -9999px;
 }
 
 .nav-links,
@@ -164,23 +164,23 @@ header .wrapper { padding-top: 14px; }
 
 header .wrapper {
   display: flex;
-    justify-content: space-between;
-    align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo 
 {
   display: flex;
-    align-items: center;
-    column-gap: 10px;
+  align-items: center;
+  column-gap: 10px;
 }
 
 .left-section { 
+  width: 80%;
   padding-top: 70px;
-    color: #fff;
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
  }
 
 form { padding-top: 30px; }
@@ -188,7 +188,7 @@ form { padding-top: 30px; }
 h1 
 {
   text-transform: capitalize;
-    color: #fff;
+  color: #fff;
 }
 /*=================================
   Header styling ends here
