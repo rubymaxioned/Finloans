@@ -281,6 +281,23 @@ h2 {
   margin-bottom: 25px;
  }
 
+ .what-first-unorder {
+  margin-bottom: 25px;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+ }
+
+ .what-first-unorder > li {
+  padding: 15px 5%;
+  border-radius: 5px;
+  background-color: #087EE5;
+  background-image: linear-gradient(to bottom, #087EE5, #064884);
+ }
+
+ .card-icon::before {
+   content: '';
+ }
 /*what section end*/
 /*=================================
   main styling ends here
