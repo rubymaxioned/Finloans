@@ -225,13 +225,19 @@ h1 {
 
 .left-section p { padding-bottom: 13px; }
 
-.left-section a {
+.blue-btn {
   padding: 7px 5%;
   border-radius: 5px;
   background: #33D4D6;
   color: #fff;
   text-transform: capitalize;
   font-size: 13px;
+}
+
+.card-list a {
+  width: 70%;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 form {
@@ -255,12 +261,16 @@ form p:last-of-type {
   background: #33D4D6;
   font-size: 14px;
  }
+
+ form p:nth-of-type(2)::first-letter,
+ form p:last-of-type::first-letter { text-transform: capitalize; }
 /*banner section end*/
 
 /*what section start*/
 
 h2 { 
   margin-bottom: 10px;
+  position: relative;
   font-size: 18px;
   text-align: center;
  }
@@ -274,12 +284,16 @@ h2 {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
-  bottom: 12px;
+  bottom: 23px
  }
 
+ h2::first-letter,
+ h3::first-letter { text-transform: capitalize; }
+
  .top-para {
-  font-size: 13px;
   margin-bottom: 25px;
+  font-size: 13px;
+  line-height: 22px;
  }
 
  .what-section ul {
@@ -313,7 +327,8 @@ h2 {
    width: 70%;
  }
 
- .card-list ul li::before {
+ .card-list ul li::before,
+ .right-why-section ul li::before {
   content: '\2e';
   font-family: "FontAwesome";
   padding-right: 10px;
@@ -360,6 +375,63 @@ h2 {
    font-family: "FontAwesome";
  }
 /*what section end*/
+
+/*why section start*/
+.why-section img { margin-bottom: 25px; }
+.right-why-section ul { margin-bottom: 20px; }
+.right-why-section ul li { font-size: 12px; }
+.right-why-section .top-para { margin-bottom: 10px; }
+.why-section { margin-bottom: 40px; }
+/*why section end*/
+
+/*how section start*/
+.how-section { padding: 20px 0; }
+
+.how-section ul li a {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  display: flex;
+  background: rgb(221,240,255);
+  align-items: center;
+  justify-content: center;
+}
+
+.how-section ul li p {
+  font-size: 13px;
+  line-height: 22px;
+}
+
+h3 { 
+  font-size: 17px;
+  margin-bottom: 10px;
+ }
+
+ .how-section ul li { margin-bottom: 30px; }
+/*how section end*/
+
+/*frequent section start*/
+
+.frequent-top-section img,
+.frequent-top-section ul { margin-bottom: 40px; }
+
+.frequent-top-section ul li { 
+  font-size: 13px;
+  padding-bottom: 10px;
+  width: 100%;
+  border-bottom: 1px solid #918E8E;
+ }
+
+.frequent-top-section ul li::before {
+  content: '\f077';
+  font-family: "FontAwesome";
+  padding-right: 10px;
+  font-size: 15px;
+  color: #918E8E;
+}
+ 
+/*frequent section end*/
 /*=================================
   main styling ends here
 =================================*/
