@@ -430,7 +430,15 @@ h3 {
   font-size: 15px;
   color: #918E8E;
 }
+
+.frequent-middle-section img { margin-bottom: 20px; }
  
+.caurosel p {
+  margin-bottom: 5px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
 /*frequent section end*/
 /*=================================
   main styling ends here
