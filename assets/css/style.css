@@ -190,6 +190,7 @@ header .wrapper {
 .banner-section { 
   display: absolute;
   padding: 30px 0;
+  margin-bottom: 40px;
  }
 
 .left-section { 
@@ -217,8 +218,7 @@ header .wrapper {
   line-height: 17px;
  }
 
-h1 
-{
+h1 {
   text-transform: capitalize;
   color: #fff;
 }
@@ -259,7 +259,27 @@ form p:last-of-type {
 
 /*what section start*/
 
-h2 { font-size: 18px; }
+h2 { 
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-align: center;
+ }
+
+ h2::after {
+  content: '';
+    display: inline-block;
+    width: 48px;
+    height: 2px;
+    position: relative;
+    bottom: 20px;
+    right: 32%;
+    background-color: #33D4D6;
+ }
+
+ .top-para {
+  font-size: 13px;
+  margin-bottom: 25px;
+ }
 
 /*what section end*/
 /*=================================
