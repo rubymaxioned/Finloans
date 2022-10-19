@@ -267,13 +267,14 @@ h2 {
 
  h2::after {
   content: '';
-    display: inline-block;
-    width: 48px;
-    height: 2px;
-    position: relative;
-    bottom: 20px;
-    right: 32%;
-    background-color: #33D4D6;
+  display: inline-block;
+  width: 42px;
+  height: 2px;
+  background-color: #33D4D6;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 12px;
  }
 
  .top-para {
@@ -295,8 +296,34 @@ h2 {
   background-image: linear-gradient(to bottom, #087EE5, #064884);
  }
 
- .card-icon::before {
-   content: '';
+ .icon1::before {
+  content: '\f0d6';
+  font-family: "FontAwesome";
+  text-indent: 0;
+  float: left;
+ }
+
+ .card-icon { 
+   display: inline-block;
+   text-indent: -9999px; }
+
+ .home-para {
+  margin-bottom: 10px;
+  font-size: 13px;
+  text-align: center;
+  text-transform: capitalize;
+ }
+
+ .amount-para {
+  margin-bottom: 20px;
+  color: #2CCFD6;
+  font-size: 17px;
+  text-align: center;
+ }
+
+ .what-second-unorder li::before {
+   content: '\e122';
+   font-family: "FontAwesome";
  }
 /*what section end*/
 /*=================================
