@@ -507,17 +507,28 @@ h6 { color: #000; }
   border-radius: 50%;
 }
 
-.caurosel p::after {
-  content: '\f077';
+.caurosel p::before {
+  content: '\f104';
   font-family: "FontAwesome";
   padding-right: 10px;
-  font-size: 15px;
+  font-size: 30px;
   color: #918E8E;
   position: absolute;
-  top: 37px;
-  left: 100%;
+  top: 187px;
+  left: 30%;
 }
  
+.caurosel p::after {
+  content: '\f105';
+  font-family: "FontAwesome";
+  padding-right: 10px;
+  font-size: 30px;
+  color: #918E8E;
+  position: absolute;
+  top: 187px;
+  right: 30%;
+}
+
 .caurosel p {
   margin-bottom: 7px;
   color: #000;
@@ -533,7 +544,7 @@ h6 { color: #000; }
   font-size: 13px;
 }
 
-.caurosel { margin-bottom: 50px; }
+.caurosel { margin-bottom: 80px; }
 
 .icon::before {
   font-family: "FontAwesome";
@@ -577,6 +588,11 @@ h6 { color: #000; }
   margin: 0 auto 20px;
   color: #fff;
   font-size: 20px;
+}
+
+.big-image-section .capital { 
+  text-transform: capitalize;
+  color: #fff;
 }
 /*big image section end*/
 /*=================================
@@ -698,10 +714,62 @@ h6 { color: #000; }
 /*media query for 480px starts here*/
 @media only screen and (min-width: 480px) {
   h2 {
+    margin-bottom: 10px;
     font-size: 30px;
     line-height: 40px;
     width: 100%;
   }
+
+  h3::after { bottom: 27px; }
+  .left-section .button-div { text-align: initial; } 
+  .left-section { margin: 25px auto; }
+
+  .right-section { 
+    width: 80%;
+    margin: 0 auto;
+   }
+
+   .banner-section .wrapper { margin-bottom: 30px; }
+   h3 { font-size: 22px; }
+
+   .what-section .wrapper,
+   .why-section .wrapper,
+   .how-section .wrapper,
+   .frequent-section .wrapper { width: 80%; }
+
+   .what-section .top-para { font-size: 13px; }
+
+   .what-section ul:nth-child(3) {
+    width: 80%;
+    margin: 0 auto;
+   }
+
+   .what-section { margin-bottom: 50px; }
+   .why-section img { margin-bottom: 35px; }
+   .top-para { font-size: 14px; }
+
+   .right-why-section ul {
+    display: flex;
+    flex-direction: column;
+   }
+
+   h6 { font-size: 14px; }
+   .frequent-top-section ul li { padding: 15px 0; }
+
+   .caurosel p::after,
+   .caurosel p::before { top: 135px; }
+
+   .frequent-bottom-section ul {
+    gap: 15px;
+    flex-direction: row;
+   }
+
+   .frequent-bottom-section ul li p {
+    font-size: 14px;
+    padding-left: 23px;
+   }
+
+   .icon::before { font-size: 17px; }
 }  
 
 /*media query for 540px starts here*/
