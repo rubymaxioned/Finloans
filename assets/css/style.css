@@ -323,7 +323,7 @@ h3 {
   line-height: 22px;
  }
 
- .what-section ul {
+ .what-section ul:nth-last-of-type(1) {
   margin-bottom: 25px;
   display: flex;
   color: #E6E0E5;
@@ -346,24 +346,37 @@ h3 {
   width: 100%;
   border-top: 1px solid;
   display: flex;
+  gap: 10px;
   align-items: center;
  }
 
- .card-list ul li {
+ .card-list > ul li {
    width: 70%;
    color: #fff;
  }
 
- .card-list ul li::first-letter { text-transform: uppercase; }
+ .card-list > ul li::first-letter {
+    text-transform: uppercase; 
+  }
 
- .card-list ul li::before,
+ .card-list > ul li::before,
  .right-why-section ul li::before {
-  content: '\2e';
-  font-family: "FontAwesome";
-  padding-right: 10px;
-  font-size: 24px;
-  color: #33D4D6;
- }
+  content: '';
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  margin-right: 10px;
+  background-color: #33d4d6;
+  border-radius: 50%;
+}
+
+.right-why-section ul li::before { background-color: #0B8CFF; }
+
+.right-why-section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 
  .card-icon::before {
   color: #fff;
@@ -752,11 +765,6 @@ h6 { color: #000; }
 
    .what-section .top-para { font-size: 13px; }
 
-   .what-section ul:nth-child(3) {
-    width: 80%;
-    margin: 0 auto;
-   }
-
    .what-section { margin-bottom: 50px; }
    .why-section img { margin-bottom: 35px; }
    .top-para { font-size: 14px; }
@@ -789,11 +797,94 @@ h6 { color: #000; }
 
 /*media query for 540px starts here*/
 @media only screen and (min-width: 540px) {
-h2 { font-size: 45px; }
- 
+  h1 { font-size: 20px; }
+
+h2 { 
+  font-size: 45px; 
+  line-height: 50px;
+}
+
+.blue-btn { font-size: 15px; }
+.right-section { padding: 22px 8%; }
+.right-section p:first-child { 
+  font-size: 21px; 
+  margin-bottom: 15px;
+}
+
+form p:last-of-type { margin-bottom: 20px; }
+
+.button-div {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+}
+
 }/*media query for 768px starts here*/
 @media only screen and (min-width: 768px) {
 
+  .what-section .wrapper > ul {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .card-list > ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-list { width: 30%; }
+
+  h3 { font-size: 25px; }
+
+  .what-section .wrapper,
+   .why-section .wrapper,
+   .how-section .wrapper,
+   .frequent-section .wrapper { width: 86%; }
+
+   .why-section .wrapper {
+     display: flex;
+     gap: 35px;
+   }
+
+   .how-section ul { display: flex;}
+
+   .frequent-top-section {
+    display: flex;
+    gap: 30px;
+   }
+
+   .frequent-middle-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+   }
+
+   .caurosel p::before {
+     top: 115px;
+     left: 40%;
+   }
+
+   .caurosel p::after {
+     top: 115px;
+     right: 40%;
+   }
+
+   .frequent-bottom-section ul { justify-content: space-between; }
+
+   .big-image-section .button-div { width: 100%; }
+   .footer-top-section {
+    display: flex;
+    flex-wrap: wrap;
+   }
+
+   .footer-left-section { flex-basis: 50%; }
+
+   .footer-middle-section {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: space-between;
+  }
+
+  .footer-right-section { flex-basis: 50%; }
 }/*media query for 995px starts here*/
 @media only screen and (min-width: 995px) {
 
