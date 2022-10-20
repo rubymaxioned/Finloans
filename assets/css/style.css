@@ -187,7 +187,6 @@ header .wrapper {
   transform: translate(0, -3px) rotate(45deg);
 }
 
-.hamburger:hover .nav-links { display: block; }
 
 
 /*=================================
@@ -254,7 +253,6 @@ h1 {
 }
 
 .card-list a {
-  width: 70%;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -275,7 +273,6 @@ form p:last-of-type {
  }
 
  form a {
-  width: 80%;
   padding: 5px 6%;
   background: #33D4D6;
   font-size: 14px;
@@ -474,7 +471,7 @@ h3 {
   border-bottom: 1px solid #918E8E;
  }
 
-.frequent-top-section ul li::before {
+.accordian ul li::before {
   content: '\f077';
   font-family: "FontAwesome";
   padding-right: 10px;
