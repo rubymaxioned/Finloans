@@ -218,19 +218,23 @@ header .wrapper {
   text-align: center;
  }
 
- form { padding: 17px 8%; }
+ .right-section {
+  padding: 17px 8%;
+  border-radius: 5px;
+  background: #fff;
+ }
 
- form p:nth-of-type(1)::first-letter {
+ .right-section p:nth-of-type(1)::first-letter {
    text-transform: capitalize;
  }
 
- form p:nth-of-type(1) {
+ .right-section p:first-child {
   margin-bottom: 10px;
   font-size: 18px;
   color: #000
  }
 
- form p:nth-of-type(2) {
+ .right-section p:nth-of-type(2) {
   margin-bottom: 15px;
   font-size: 13px;
   line-height: 17px;
@@ -445,6 +449,7 @@ h4 {
 h2 {
   width: 75%;
   margin: 0 auto 30px;
+  color:#fff;
   font-size: 21px;
   text-align: initial;
   line-height: 33px;
@@ -667,15 +672,49 @@ h6 { color: #000; }
     text-indent: -9999px;
    }
 
-   .footer-bottom p { font-size: 13px; }
+  .form-section {
+    padding: 5px 0;
+    margin-bottom: 20px;
+    display: flex;
+    border: 1px solid;
+    box-sizing: border-box;
+  }
+
+  .form-section input {
+    border: none;
+    width: 63%;
+    padding-left: 10px
+  }
+
+  .footer-bottom p { 
+    margin-top: 50px;
+    font-size: 13px;
+   }
  /*=================================
   footer styling ends here
 =================================*/ 
 
 /*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
+/*media query for 480px starts here*/
+@media only screen and (min-width: 480px) {
 
 }  
+
+/*media query for 540px starts here*/
+@media only screen and (min-width: 540px) {
+
+  h2 {
+    width: 51%;
+    font-size: 25px;
+  }
+}/*media query for 768px starts here*/
+@media only screen and (min-width: 768px) {
+
+}/*media query for 995px starts here*/
+@media only screen and (min-width: 995px) {
+
+}/*media query for 1024px starts here*/
+@media only screen and (min-width: 1024px) {
+
+}
+ 
