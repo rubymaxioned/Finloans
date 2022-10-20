@@ -387,6 +387,17 @@ h3 {
   text-indent: 0;
  }
 
+ .card-list .button-div {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+ }
+
+ .card-list .capital { 
+  text-transform: uppercase;
+  color: #fff;
+}
+
  .icon1::before { content: '\f0d6'; }
  .icon2::before { content: '\f1b9';}
  .icon3::before { content: '\f19d';}
@@ -579,13 +590,16 @@ h6 { color: #000; }
   display: flex;
   flex-direction: column;
   gap: 15px;
+  align-items: center;
 }
 
 .frequent-bottom-section ul li p { 
   padding-left: 50px;
-  font-size: 22px;
+  font-size: 18px;
   text-transform: capitalize;
 }
+
+.frequent-bottom-section ul li { max-width: 150px; }
 
 /*frequent section end*/
 
