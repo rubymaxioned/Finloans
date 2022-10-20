@@ -885,8 +885,33 @@ form p:last-of-type { margin-bottom: 20px; }
   }
 
   .footer-right-section { flex-basis: 50%; }
-}/*media query for 995px starts here*/
+}
+
+/*media query for 995px starts here*/
 @media only screen and (min-width: 995px) {
+  .banner-section .wrapper { 
+    display: flex;
+    padding: 50px 0;
+  }
+
+  .left-section,
+  .right-section { flex-basis: 40%; }
+  .hamburger { display: none; }
+  .nav-links,
+  .tel-section { display: block; }
+
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+
+  .inner-links, 
+  .sublinks { 
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    display: none;
+  }
 
 }/*media query for 1024px starts here*/
 @media only screen and (min-width: 1024px) {
