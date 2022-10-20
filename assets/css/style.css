@@ -187,6 +187,8 @@ header .wrapper {
   transform: translate(0, -3px) rotate(45deg);
 }
 
+.hamburger:hover .nav-links { display: block; }
+
 
 /*=================================
   Header styling ends here
@@ -605,24 +607,35 @@ h6 { color: #000; }
 }
 
 .footer-social-links ul {
+  margin-bottom: 20px;
   display: flex;
-  flex-direction: column;
 }
 
-.footer-social-links ul li a::before {
-  content: '\f077';
-    font-family: "FontAwesome";
-    padding-right: 10px;
-    font-size: 15px;
-    color: #918E8E;
-    position: absolute;
-    text-indent: 0;
-    float: left;
+.footer-social-links ul li a {
+  width: 25px;
+  height: 25px;
+  border: 1px solid;
+  border-radius: 50%;
 }
 
-/* .footer-icon { 
+.footer-icon::before {
+  font-family: "FontAwesome";
+  padding-right: 10px;
+  font-size: 15px;
+  color: #918E8E;
+  text-indent: 0;
+  float: left;
+}
+
+.footer-icon {
+  display: inline-block;
   text-indent: -9999px;
- } */
+}
+
+.facebook::before { content: '\f09a'; }
+.google::before { content: '\f1a0'; }
+.twitter::before { content: '\f099'; }
+.instagram::before { content: '\f16d'; }
 
  h5 { 
    color: #000;
@@ -639,6 +652,25 @@ h6 { color: #000; }
    }
 
    .services span { text-transform: uppercase; }
+
+   .footer-bottom .capital {
+     text-transform: capitalize;
+   }
+
+   .footer-bottom .blue { color: #21A3FF; }
+
+   .heart::before { 
+    content: '\f004';
+    font-family: "FontAwesome";
+    text-indent: 0;
+   }
+
+   .heart { 
+    display: inline-block;
+    text-indent: -9999px;
+   }
+
+   .footer-bottom p { font-size: 13px; }
  /*=================================
   footer styling ends here
 =================================*/ 
