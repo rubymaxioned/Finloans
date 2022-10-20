@@ -555,6 +555,10 @@ h6 { color: #000; }
   padding-left: 50px;
   text-transform: capitalize;
 }
+
+.big-image-section {
+  background: url(https://via.placeholder.com/1220x200.png?) no-repeat center center / cover;
+}
 /*frequent section end*/
 /*=================================
   main styling ends here
