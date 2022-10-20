@@ -99,6 +99,7 @@ li {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #A9A09B;
 }
 
 /* Common styling */
@@ -171,6 +172,21 @@ header .wrapper {
 
 .nav-links,
 .tel-section { display: none; }
+
+.hamburger:hover .nav-links {
+  display: block; 
+}
+
+.hamburger:hover .bar1 {
+  transform: translate(0, 3px) rotate(-45deg);
+}
+
+.hamburger:hover .bar2 { display: none; }
+
+.hamburger:hover .bar3 {
+  transform: translate(0, -3px) rotate(45deg);
+}
+
 
 /*=================================
   Header styling ends here
@@ -316,11 +332,10 @@ h2 {
  } 
 
  .card-list ul {
+  width: 100%;
+  border-top: 1px solid;
   display: flex;
-    border-top: 1px solid;
-    width: 100%;
-    /* justify-content: center; */
-    align-items: center;
+  align-items: center;
  }
 
  .card-list ul li {
