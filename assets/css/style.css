@@ -609,7 +609,36 @@ h6 { color: #000; }
   flex-direction: column;
 }
 
+.footer-social-links ul li a::before {
+  content: '\f077';
+    font-family: "FontAwesome";
+    padding-right: 10px;
+    font-size: 15px;
+    color: #918E8E;
+    position: absolute;
+    text-indent: 0;
+    float: left;
+}
 
+/* .footer-icon { 
+  text-indent: -9999px;
+ } */
+
+ h5 { 
+   color: #000;
+   margin-bottom: 10px;
+   }
+
+   .services,
+   .useful-links {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    gap: 4px;
+   }
+
+   .services span { text-transform: uppercase; }
  /*=================================
   footer styling ends here
 =================================*/ 
