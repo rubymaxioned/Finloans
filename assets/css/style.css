@@ -213,7 +213,7 @@ header .wrapper {
 .left-section { 
   width: 80%;
   padding: 70px 0 25px 0;
-  margin: 0 auto;
+  margin: 0 auto 30px;
   color: #fff;
   text-align: center;
  }
@@ -447,10 +447,9 @@ h4 {
 }
 
 h2 {
-  width: 75%;
-  margin: 0 auto 30px;
+  margin: 0 auto 10px;
   color:#fff;
-  font-size: 21px;
+  font-size: 28px;
   text-align: initial;
   line-height: 33px;
 }
@@ -462,6 +461,8 @@ h3 {
  }
 
  .how-section ul li { margin-bottom: 30px; }
+
+ .left-section .button-div { display: flex; }
 /*how section end*/
 
 /*frequent section start*/
@@ -476,11 +477,13 @@ h3 {
   border-bottom: 1px solid #918E8E;
  }
 
+ .accordian ul li:nth-of-type(1)::before { content: '\f106';}
+
 .accordian ul li::before {
-  content: '\f077';
+  content: '\f107';
   font-family: "FontAwesome";
   padding-right: 10px;
-  font-size: 15px;
+  font-size: 22px;
   color: #918E8E;
   position: absolute;
 }
@@ -594,6 +597,11 @@ h6 { color: #000; }
   text-transform: capitalize;
   color: #fff;
 }
+
+.big-image-section .button-div {
+  display: flex;
+  justify-content: center;
+}
 /*big image section end*/
 /*=================================
   main styling ends here
@@ -627,6 +635,7 @@ h6 { color: #000; }
 .footer-social-links ul {
   margin-bottom: 20px;
   display: flex;
+  gap: 5px
 }
 
 .footer-social-links ul li a {
@@ -634,15 +643,18 @@ h6 { color: #000; }
   height: 25px;
   border: 1px solid;
   border-radius: 50%;
+  position: relative;
 }
 
 .footer-icon::before {
-  font-family: "FontAwesome";
-  padding-right: 10px;
-  font-size: 15px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
   color: #918E8E;
+  font-family: "FontAwesome";
+  font-size: 15px;
   text-indent: 0;
-  float: left;
+  transform: translate(-50%, -50%);
 }
 
 .footer-icon {
@@ -679,6 +691,7 @@ h6 { color: #000; }
 
    .heart::before { 
     content: '\f004';
+    float: left;
     font-family: "FontAwesome";
     text-indent: 0;
    }
@@ -715,7 +728,7 @@ h6 { color: #000; }
 @media only screen and (min-width: 480px) {
   h2 {
     margin-bottom: 10px;
-    font-size: 30px;
+    font-size: 32px;
     line-height: 40px;
     width: 100%;
   }
@@ -770,15 +783,14 @@ h6 { color: #000; }
    }
 
    .icon::before { font-size: 17px; }
+   .footer-bottom p { font-size: 12px; }
+   .subscribe { color: #fff; }
 }  
 
 /*media query for 540px starts here*/
 @media only screen and (min-width: 540px) {
-
-  h2 {
-    width: 51%;
-    font-size: 25px;
-  }
+h2 { font-size: 45px; }
+ 
 }/*media query for 768px starts here*/
 @media only screen and (min-width: 768px) {
 
