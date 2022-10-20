@@ -224,8 +224,9 @@ header .wrapper {
  }
 
  form p:nth-of-type(1) {
-   font-size: 18px;
-   margin-bottom: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #000
  }
 
  form p:nth-of-type(2) {
@@ -280,18 +281,28 @@ form p:last-of-type {
 
  form p:nth-of-type(2)::first-letter,
  form p:last-of-type::first-letter { text-transform: capitalize; }
+
+ .first-letter::first-letter { text-transform: uppercase; }
+
+ select { 
+   padding: 5px 2%;
+   border: 1px solid #ccc;
+   background: #fff;
+   }
+
+   form .blue-btn { text-align: center; }
 /*banner section end*/
 
 /*what section start*/
 
-h2 { 
+h3 { 
   margin-bottom: 10px;
   position: relative;
   font-size: 18px;
   text-align: center;
  }
 
- h2::after {
+ h3::after {
   content: '';
   display: inline-block;
   width: 42px;
@@ -302,9 +313,6 @@ h2 {
   transform: translate(-50%, 0);
   bottom: 23px
  }
-
- h2::first-letter,
- h3::first-letter { text-transform: capitalize; }
 
  .top-para {
   margin-bottom: 25px;
@@ -340,7 +348,10 @@ h2 {
 
  .card-list ul li {
    width: 70%;
+   color: #fff;
  }
+
+ .card-list ul li::first-letter { text-transform: uppercase; }
 
  .card-list ul li::before,
  .right-why-section ul li::before {
@@ -352,11 +363,13 @@ h2 {
  }
 
  .card-icon::before {
+  color: #fff;
   float: left;
   font-family: "FontAwesome";
   font-size: 30px;
   text-indent: 0;
  }
+
  .icon1::before { content: '\f0d6'; }
  .icon2::before { content: '\f1b9';}
  .icon3::before { content: '\f19d';}
@@ -373,6 +386,7 @@ h2 {
 
  .home-para {
   margin-bottom: 10px;
+  color: #fff;
   font-size: 13px;
   text-align: center;
   text-transform: capitalize;
@@ -394,12 +408,23 @@ h2 {
 /*why section start*/
 .why-section img { margin-bottom: 25px; }
 .right-why-section ul { margin-bottom: 20px; }
-.right-why-section ul li { font-size: 12px; }
+
+.right-why-section ul li { 
+  color:#000;
+  font-size: 12px;
+ }
+
 .right-why-section .top-para { margin-bottom: 10px; }
 .why-section { margin-bottom: 40px; }
 /*why section end*/
 
 /*how section start*/
+
+h4 { 
+  margin-bottom: 10px;
+  color: #000;
+}
+
 .how-section { padding: 20px 0; }
 
 .how-section ul li a {
@@ -418,9 +443,18 @@ h2 {
   line-height: 22px;
 }
 
+h2 {
+  width: 75%;
+  margin: 0 auto 30px;
+  font-size: 21px;
+  text-align: initial;
+  line-height: 33px;
+}
+
 h3 { 
   font-size: 17px;
   margin-bottom: 10px;
+  color: #000;
  }
 
  .how-section ul li { margin-bottom: 30px; }
@@ -433,7 +467,7 @@ h3 {
 
 .frequent-top-section ul li { 
   font-size: 13px;
-  padding-bottom: 10px;
+  padding: 10px 0;
   width: 100%;
   border-bottom: 1px solid #918E8E;
  }
@@ -444,16 +478,83 @@ h3 {
   padding-right: 10px;
   font-size: 15px;
   color: #918E8E;
+  position: absolute;
 }
 
-.frequent-middle-section img { margin-bottom: 20px; }
- 
-.caurosel p {
-  margin-bottom: 5px;
-  font-size: 13px;
+.accordian ul li h6 { padding-left: 8%; }
+
+.accordian ul li p {
+  padding-top: 10px;
+  padding-left: 4%;
   line-height: 20px;
 }
+    
 
+h6 { color: #000; }
+
+.caurosel-img { 
+  text-align: center;
+  margin-bottom: 35px;
+ }
+
+.caurosel-img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.caurosel p::after {
+  content: '\f077';
+  font-family: "FontAwesome";
+  padding-right: 10px;
+  font-size: 15px;
+  color: #918E8E;
+  position: absolute;
+  top: 37px;
+  left: 100%;
+}
+ 
+.caurosel p {
+  margin-bottom: 7px;
+  color: #000;
+  font-size: 14px;
+  line-height: 25px;
+  position: relative;
+}
+
+.caurosel span {
+  text-transform: capitalize;
+  display: inline-block;
+  width: 100%;
+  font-size: 13px;
+}
+
+.caurosel { margin-bottom: 50px; }
+
+.icon::before {
+  font-family: "FontAwesome";
+  font-size: 30px;
+  position: absolute;
+}
+
+.frequent-icon1::before { content: '\f0d6'; }
+.frequent-icon2::before { content: '\f1b9'; }
+.frequent-icon3::before { content: '\f19d'; }
+.frequent-icon4::before { content: '\f0d6'; }
+.frequent-icon5::before { content: '\f1b9'; }
+
+.frequent-bottom-section ul {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.frequent-bottom-section ul li p { 
+  font-size: 22px;
+  padding-left: 50px;
+  text-transform: capitalize;
+}
 /*frequent section end*/
 /*=================================
   main styling ends here
