@@ -261,6 +261,11 @@ h1 {
   text-align: center;
 }
 
+.card-list ul li .upper { 
+  text-transform: capitalize;
+  color: #fff;
+ }
+
 form {
   border-radius: 5px;
   background: #fff;
@@ -369,6 +374,11 @@ h3 {
   display: inline-block;
   content: '';
   background-color: #33d4d6;
+}
+
+.right-why-section ul li .upper {
+  text-transform: capitalize;
+  color: #000;
 }
 
 .right-why-section ul li::before { background-color: #0B8CFF; }
