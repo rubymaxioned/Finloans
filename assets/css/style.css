@@ -173,21 +173,10 @@ header .wrapper {
 .nav-links,
 .tel-section { display: none; }
 
-.hamburger:hover .nav-links {
-  display: block; 
-}
-
-.hamburger:hover .bar1 {
-  transform: translate(0, 3px) rotate(-45deg);
-}
-
+.hamburger:hover .nav-links { display: block; }
+.hamburger:hover .bar1 { transform: translate(0, 3px) rotate(-45deg); }
 .hamburger:hover .bar2 { display: none; }
-
-.hamburger:hover .bar3 {
-  transform: translate(0, -3px) rotate(45deg);
-}
-
-
+.hamburger:hover .bar3 { transform: translate(0, -3px) rotate(45deg); }
 
 /*=================================
   Header styling ends here
@@ -275,7 +264,7 @@ select { width: 80%; }
 form p:last-of-type { 
   margin-bottom: 10px;
   font-size: 13px;
- }
+}
 
 form a {
   padding: 5px 6%;
@@ -390,7 +379,7 @@ h3::after {
   font-family: "FontAwesome";
   font-size: 30px;
   text-indent: 0;
- }
+}
 
 .card-list .button-div {
   width: 40%;
@@ -408,9 +397,9 @@ h3::after {
 .icon3::before { content: '\f19d';}
 
 .card-icon { 
-   margin-bottom: 20px;
-   display: inline-block;
-   text-indent: -9999px; 
+  margin-bottom: 20px;
+  display: inline-block;
+  text-indent: -9999px; 
 }
 
 .card-list ul li:nth-of-type(1) {
@@ -491,7 +480,12 @@ h3 {
   font-size: 20px;
 }
 
-.how-section ul li { margin-bottom: 30px; }
+.how-section ul li { 
+  margin-bottom: 30px; 
+  text-align: center;
+}
+
+.how-section ul li a { margin: 0 auto 10px; }
 .left-section .button-div { display: flex; }
 
 /*how section end*/
@@ -525,16 +519,15 @@ h3 {
   line-height: 20px;
 }
     
-
 h6 { color: #000; }
 
 .caurosel-img { 
   margin-bottom: 35px;
   position: relative;
   text-align: center;
- }
+}
 
- .caurosel-img::before {
+.caurosel-img::before {
   width: 20px;
   height: 20px;
   padding: 7px;
@@ -647,7 +640,7 @@ h6 { color: #000; }
 .big-image-section { 
   padding: 50px 0 50px;
   margin-bottom: 40px;
- }
+}
 
 .big-image-section p {
   width: 75%;
@@ -843,11 +836,11 @@ h6 { font-size: 14px; }
 .icon::before { font-size: 17px; }
 .footer-bottom p { font-size: 12px; }
 .subscribe { color: #fff; }
+.caurosel-img::before { left: 56%; }
 }  
 
 /*media query for 540px starts here*/
 @media only screen and (min-width: 540px) {
-
 h1 { font-size: 20px; }
 
 h2 { 
@@ -871,7 +864,10 @@ form p:last-of-type { margin-bottom: 20px; }
   justify-content: center;
 }
 
-}/*media query for 768px starts here*/
+.frequent-bottom-section ul { justify-content: space-between; }
+
+}
+/*media query for 768px starts here*/
 @media only screen and (min-width: 768px) {
 
   .what-section .wrapper > ul {
@@ -1024,7 +1020,6 @@ form p:last-of-type { margin-bottom: 20px; }
 /*media query for 1024px starts here*/
 @media only screen and (min-width: 1024px) {
   .card-list { width: 32%; }
-
   .left-section { flex-basis: 35%; }
   .left-section h2 { font-size: 39px; }
   .right-section { flex-basis: 40%; }
@@ -1181,7 +1176,7 @@ h3 { margin-bottom: 20px; }
   h3 { 
     margin-bottom: 5px;
     font-size: 35px;
-   }
+  }
 
   h3::after { bottom: 40px; }
   .top-para { margin-bottom: 65px; }
@@ -1206,7 +1201,7 @@ h3 { margin-bottom: 20px; }
   .right-why-section h3 { 
     margin-bottom: 24px;
     text-align: initial;
-   }
+  }
    
   .why-section img { 
     height: 382px;
@@ -1362,9 +1357,9 @@ h3 { margin-bottom: 20px; }
   .useful-links { 
     font-size: 10px;
     gap: 20px;
-   }
+  }
 
-   .footer-right-section h5 { margin-bottom: 32px; }
-   form p:last-of-type { line-height: 20px; }
-   .subscribe { margin-right: 5px; }
+  .footer-right-section h5 { margin-bottom: 32px; }
+  form p:last-of-type { line-height: 20px; }
+  .subscribe { margin-right: 5px; }
 }
