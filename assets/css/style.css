@@ -437,11 +437,6 @@ h3 {
   text-align: center;
  }
 
- .what-second-unorder li::before {
-   content: '\e122';
-   font-family: "FontAwesome";
- }
-
  .what-section .top-para,
  .how-section .top-para { text-align: center; }
 /*what section end*/
@@ -539,8 +534,25 @@ h6 { color: #000; }
 
 .caurosel-img { 
   margin-bottom: 35px;
+  position: relative;
   text-align: center;
  }
+
+ .caurosel-img::before {
+  width: 20px;
+  height: 20px;
+  padding: 7px;
+  border: 1px solid #33D4D6;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  background: #33D4D6;
+  color: #fff;
+  content: '\f10d';
+  font-family: "FontAwesome";
+  transform: translate(50%, 50%);
+}
 
 .caurosel-img img {
   width: 150px;
@@ -549,25 +561,39 @@ h6 { color: #000; }
 }
 
 .caurosel p::before {
-  padding-right: 10px;
+  width: 20px;
+  height: 20px;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
   position: absolute;
   top: 187px;
   left: 30%;
+  align-items: center;
+  background: #33D4D6;
   color: #918E8E;
   content: '\f104';
   font-family: "FontAwesome";
-  font-size: 30px;
+  font-size: 29px;
+  justify-content: center;
 }
  
 .caurosel p::after {
-  padding-right: 10px;
+  width: 20px;
+  height: 20px;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
   position: absolute;
   top: 187px;
   right: 30%;
+  align-items: center;
   color: #918E8E;
+  background: #33D4D6;
   content: '\f105';
   font-family: "FontAwesome";
-  font-size: 30px;
+  font-size: 29px;
+  justify-content: center;
 }
 
 .caurosel p {
@@ -946,6 +972,20 @@ form p:last-of-type { margin-bottom: 20px; }
 
   nav,
   .tel-section { font-size: 10px; }
+
+  .tel-section li:nth-of-type(1):before {
+    padding-right: 5px;
+    color: #33C4BC;
+    content: '\f095';
+    font-family: "FontAwesome";
+  }
+
+  .pages::after,
+  .blog::after {
+    padding-right: 5px;
+    content: '\f107 ';
+    font-family: "FontAwesome";
+  }
 
   .tel-section li:nth-child(2) { border: 1px solid #33C4BC; }
 
