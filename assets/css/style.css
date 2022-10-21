@@ -137,7 +137,7 @@ header .wrapper { padding-top: 14px; }
   width: 30px;
   height: 24px;
   padding: 6px;
-  border: 1p solid;
+  border: 1px solid;
   border-radius: 3px;
   display: flex;
   align-items: center;
@@ -201,14 +201,10 @@ header .wrapper {
 .banner-section {
   width: 100%;
   height: auto;
-  background: url(https://via.placeholder.com/1350x500.png?) no-repeat center center / cover;
-}
-
-.banner-section { 
   padding: 30px 0;
   margin-bottom: 40px;
-  display: absolute;
- }
+  background: url(https://via.placeholder.com/1350x500.png?) no-repeat center center / cover;
+}
 
 .left-section { 
   width: 80%;
@@ -216,29 +212,29 @@ header .wrapper {
   margin: 0 auto 30px;
   color: #fff;
   text-align: center;
- }
+}
 
- .right-section {
+.right-section {
   padding: 17px 8%;
   border-radius: 5px;
   background: #fff;
- }
+}
 
- .right-section p:nth-of-type(1)::first-letter {
-   text-transform: capitalize;
- }
+.right-section p:nth-of-type(1)::first-letter {
+  text-transform: capitalize;
+}
 
- .right-section p:first-child {
+.right-section p:first-child {
   margin-bottom: 10px;
   color: #000;
   font-size: 18px;
- }
+}
 
- .right-section p:nth-of-type(2) {
+.right-section p:nth-of-type(2) {
   margin-bottom: 15px;
   font-size: 13px;
   line-height: 17px;
- }
+}
 
 h1 {
   color: #fff;
@@ -281,36 +277,35 @@ form p:last-of-type {
   font-size: 13px;
  }
 
- form a {
+form a {
   padding: 5px 6%;
   background: #33D4D6;
   font-size: 14px;
- }
+}
 
- form p:nth-of-type(2)::first-letter,
- form p:last-of-type::first-letter { text-transform: capitalize; }
+form p:nth-of-type(2)::first-letter,
+form p:last-of-type::first-letter { text-transform: capitalize; }
 
- .first-letter::first-letter { text-transform: uppercase; }
+.first-letter::first-letter { text-transform: uppercase; }
 
- select { 
-   padding: 5px 2%;
-   border: 1px solid #ccc;
-   background: #fff;
-   }
+select { 
+  padding: 5px 2%;
+  border: 1px solid #ccc;
+  background: #fff;
+}
 
-   form .blue-btn { text-align: center; }
+form .blue-btn { text-align: center; }
 /*banner section end*/
 
 /*what section start*/
-
 h3 { 
   margin-bottom: 10px;
   position: relative;
   font-size: 18px;
   text-align: center;
- }
+}
 
- h3::after {
+h3::after {
   width: 42px;
   height: 2px;
   display: inline-block;
@@ -320,23 +315,23 @@ h3 {
   content: '';
   background-color: #33D4D6;
   transform: translate(-50%, 0);
- }
+}
 
- .top-para {
+.top-para {
   margin-bottom: 25px;
   font-size: 13px;
   line-height: 22px;
- }
+}
 
- .what-section ul:nth-last-of-type(1) {
+.what-section ul:nth-last-of-type(1) {
   margin-bottom: 25px;
   display: flex;
   color: #E6E0E5;
   flex-direction: column;
   font-size: 13px;
- }
+}
 
- .card-list {
+.card-list {
   padding-top: 20px;
   border-radius: 5px;
   margin-bottom: 20px;
@@ -345,28 +340,28 @@ h3 {
   background-color: #087EE5;
   background-image: linear-gradient(to bottom, #087EE5, #064884);
   flex-direction: column;
- } 
+} 
 
- .card-list ul {
+.card-list ul {
   width: 100%;
   border-top: 1px solid;
   display: flex;
   align-items: center;
   gap: 10px;
- }
+}
 
- .card-list li {
-   width: 70%;
-   color: #fff;
-   max-width: 200px;
-  }
+.card-list li {
+  width: 70%;
+  color: #fff;
+  max-width: 200px;
+}
 
- .card-list li:first-letter {
-    text-transform: uppercase; 
-  }
+.card-list li:first-letter {
+  text-transform: uppercase; 
+}
 
- .card-list > ul li::before,
- .right-why-section ul li::before {
+.card-list > ul li::before,
+.right-why-section ul li::before {
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -397,48 +392,48 @@ h3 {
   text-indent: 0;
  }
 
- .card-list .button-div {
+.card-list .button-div {
   width: 40%;
   display: flex;
   justify-content: center;
- }
+}
 
- .card-list .capital { 
+.card-list .capital { 
   text-transform: uppercase;
   color: #fff;
 }
 
- .icon1::before { content: '\f0d6'; }
- .icon2::before { content: '\f1b9';}
- .icon3::before { content: '\f19d';}
+.icon1::before { content: '\f0d6'; }
+.icon2::before { content: '\f1b9';}
+.icon3::before { content: '\f19d';}
 
- .card-icon { 
+.card-icon { 
    margin-bottom: 20px;
    display: inline-block;
    text-indent: -9999px; 
-  }
+}
 
-  .card-list ul li:nth-of-type(1) {
-    margin-top: 20px;
-  }
+.card-list ul li:nth-of-type(1) {
+  margin-top: 20px;
+}
 
- .home-para {
+.home-para {
   margin-bottom: 10px;
   color: #fff;
   font-size: 13px;
   text-align: center;
   text-transform: capitalize;
- }
+}
 
- .amount-para {
+.amount-para {
   margin-bottom: 20px;
   color: #2CCFD6;
   font-size: 17px;
   text-align: center;
- }
+}
 
- .what-section .top-para,
- .how-section .top-para { text-align: center; }
+.what-section .top-para,
+.how-section .top-para { text-align: center; }
 /*what section end*/
 
 /*why section start*/
@@ -448,14 +443,13 @@ h3 {
 .right-why-section ul li { 
   color:#000;
   font-size: 12px;
- }
+}
 
 .right-why-section .top-para { margin-bottom: 20px; }
 .why-section { margin-bottom: 40px; }
 /*why section end*/
 
 /*how section start*/
-
 h4 { 
   margin-bottom: 10px;
   color: #000;
@@ -464,15 +458,15 @@ h4 {
 .how-section { 
   padding: 20px 0;
   background-color: #F6FBFF;
- }
+}
 
 .how-section ul li a {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   margin-bottom: 10px;
-  color: #4595FF;
   display: flex;
+  color: #4595FF;
   align-items: center;
   background: rgb(221,240,255);
   justify-content: center;
@@ -495,16 +489,14 @@ h3 {
   margin-bottom: 10px;
   color: #000;
   font-size: 20px;
- }
+}
 
- .how-section ul li { margin-bottom: 30px; }
-
- .left-section .button-div { display: flex; }
+.how-section ul li { margin-bottom: 30px; }
+.left-section .button-div { display: flex; }
 
 /*how section end*/
 
 /*frequent section start*/
-
 .frequent-top-section img,
 .frequent-top-section ul { margin-bottom: 40px; }
 
@@ -513,9 +505,9 @@ h3 {
   padding: 15px 0;
   border-bottom: 1px solid #918E8E;
   font-size: 13px;
- }
+}
 
- .accordian ul li:nth-of-type(1)::before { content: '\f106';}
+.accordian ul li:nth-of-type(1)::before { content: '\f106';}
 
 .accordian ul li::before {
   padding-right: 10px;
@@ -632,9 +624,9 @@ h6 { color: #000; }
 .frequent-bottom-section ul {
   margin-bottom: 50px;
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 15px;
-  align-items: center;
 }
 
 .frequent-bottom-section ul li p { 
@@ -645,7 +637,6 @@ h6 { color: #000; }
 
 .frequent-bottom-section ul li { max-width: 150px; }
 .accordian li p::first-letter { text-transform: uppercase;}
-
 /*frequent section end*/
 
 /*big image section start*/
@@ -822,6 +813,7 @@ h3 { font-size: 22px; }
 .why-section .wrapper,
 .how-section .wrapper,
 .frequent-section .wrapper { width: 80%; }
+
 .what-section .top-para { font-size: 13px; }
 .what-section { margin-bottom: 50px; }
 .why-section img { margin-bottom: 35px; }
@@ -1016,13 +1008,22 @@ form p:last-of-type { margin-bottom: 20px; }
   .right-section { padding: 30px 5%; }
   nav ul li a { color: #fff; }
   .banner-section .wrapper { padding: 100px 0; }
+  .tel-section li:nth-child(2) a:hover { color: #fff}
+
+  .blue-btn:hover {
+    color: #000;
+  }
+
+  .subscribe:hover { color: #000; }
+  .footer-icon:hover {
+    background-color: #33D4D6;
+    color: #fff;
+  }
 }
 
 /*media query for 1024px starts here*/
 @media only screen and (min-width: 1024px) {
-  .card-list {
-    width: 32%;
-  }
+  .card-list { width: 32%; }
 
   .left-section { flex-basis: 35%; }
   .left-section h2 { font-size: 39px; }
@@ -1089,9 +1090,7 @@ h3 { margin-bottom: 20px; }
 
 .right-why-section ul { gap: 15px; }
 .right-why-section ul li { font-size: 15px; }
-.right-why-section .blue-btn {
-  padding: 10px 11%;
-}
+.right-why-section .blue-btn { padding: 10px 11%; }
 }
  
 /*media query for 1080px starts here*/
@@ -1136,8 +1135,8 @@ h3 { margin-bottom: 20px; }
   }
 
   .right-section p:nth-of-type(2) { 
-    font-size: 12px; 
     margin-bottom: 28px;
+    font-size: 12px; 
   }
 
   form select { 
@@ -1180,8 +1179,8 @@ h3 { margin-bottom: 20px; }
   .how-section .wrapper { width: 81.5%;  }
   
   h3 { 
-    font-size: 35px;
     margin-bottom: 5px;
+    font-size: 35px;
    }
 
   h3::after { bottom: 40px; }
@@ -1210,21 +1209,21 @@ h3 { margin-bottom: 20px; }
    }
    
   .why-section img { 
-    flex-basis: 50%;
     height: 382px;
+    flex-basis: 50%;
   }
 
   .right-why-section { flex-basis: 43%; }
 
   .why-section .top-para {
+    margin-bottom: 20px;
     font-size: 13px;
     line-height: 21px;
-    margin-bottom: 20px;
   } 
 
   .right-why-section ul { 
-    gap: 8px;
     margin-bottom: 43px;
+    gap: 8px;
   }
 
   .right-why-section ul li { font-size: 13px; }
@@ -1256,39 +1255,37 @@ h3 { margin-bottom: 20px; }
 
   .frequent-top-section { 
     margin-bottom: 7%;
-    justify-content: space-between; 
     align-items: center;
+    justify-content: space-between; 
   }
 
   .frequent-top-section img { flex-basis: 45%; }
 
   .frequent-top-section .accordian { 
-    flex-basis: 45%; 
     display: flex;
+    flex-basis: 45%; 
     flex-direction: column;
   }
 
   .accordian h3 { 
     width: 70%;
-    text-align: initial;
     margin-bottom: 35px;
+    text-align: initial;
   }
 
   .accordian ul { width: 70%; }
   .accordian ul li h6:first-child { margin-bottom: 10px; }
 
   .accordian li p { 
-    font-size: 12px;
     margin-bottom: 14px;
+    font-size: 12px;
    }
 
   .accordian ul li h6:first-child { margin-bottom: 0; }
 
   .frequent-middle-section { 
     width: 86%; 
-    margin: ;
-    margin: 0 auto;
-    margin-bottom: 7%;
+    margin: 0 auto 7%;
     justify-content: space-between;
   }
 
@@ -1329,8 +1326,8 @@ h3 { margin-bottom: 20px; }
   }
 
   .big-image-section .button-div {
-    justify-content: end; 
     height: 37px;
+    justify-content: end; 
   }
 
   footer .wrapper { 
@@ -1341,16 +1338,16 @@ h3 { margin-bottom: 20px; }
   .footer-top-section { margin-bottom: 9.5%; }
 
   .footer-bottom p { 
+    margin-bottom: 45px;
     font-size: 11px; 
-    margin-bottom: 45px
   }
   
   .footer-logo { margin-bottom:  31px;}
   .footer-logo p { font-size: 18px; }
 
   .footer-address { 
-    font-size: 11px; 
     margin-bottom: 42px;
+    font-size: 11px; 
   }
 
   .footer-middle-section { flex-basis: 50%; }
