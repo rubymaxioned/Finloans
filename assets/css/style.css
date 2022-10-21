@@ -461,7 +461,10 @@ h4 {
   color: #000;
 }
 
-.how-section { padding: 20px 0; }
+.how-section { 
+  padding: 20px 0;
+  background-color: #F6FBFF;
+ }
 
 .how-section ul li a {
   width: 50px;
@@ -941,6 +944,9 @@ form p:last-of-type { margin-bottom: 20px; }
 
 /*media query for 995px starts here*/
 @media only screen and (min-width: 995px) {
+  .card-list {
+    width: 32%;
+  }
 
   .banner-section .wrapper { 
     padding: 50px 0;
@@ -955,6 +961,7 @@ form p:last-of-type { margin-bottom: 20px; }
 
   .nav-links {
     display: flex;
+    font-size: 13px;
     gap: 20px;
   }
 
@@ -1006,6 +1013,61 @@ form p:last-of-type { margin-bottom: 20px; }
   .banner-section .wrapper { padding: 100px 0; }
 }/*media query for 1024px starts here*/
 @media only screen and (min-width: 1024px) {
+  .card-list {
+    width: 32%;
+  }
+
+  .left-section { flex-basis: 35%; }
+  .left-section h2 { font-size: 39px; }
+  .right-section { flex-basis: 40%; }
+  .right-section p:first-child { font-size: 23px; }
+
+  .right-section p:nth-of-type(2) {
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  select { 
+    width: 100%; 
+    font-size: 15px;
+  }
+
+  form p:last-of-type { font-size: 15px; }
+
+  .frequent-middle-section,
+  .frequent-bottom-section  { margin-bottom: 10%; }
+
+  .frequent-bottom-section ul li p,
+  .icon::before { font-size: 20px; }
+
+  .frequent-bottom-section ul li p { padding-left: 30px; }
+  .frequent-bottom-section ul { justify-content: space-around; }
+  .big-image-section .wrapper { display: flex; }
+
+  .big-image-section p {
+    flex-basis: 40%;
+    font-size: 24px;
+  }
+
+  .big-image-section .button-div { 
+    height: 30px;
+    flex-basis: 40%;
+  }
+
+  .footer-left-section { flex-basis: 25%; }
+
+  .footer-middle-section {
+  display: flex;
+  flex-basis: 35%;
+  justify-content: space-evenly;
+}
+
+.footer-right-section { flex-basis: 35%; }
+
+.footer-bottom p {
+  font-size: 16px;
+  text-align: center;
+}
 
 }
  
