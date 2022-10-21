@@ -409,7 +409,7 @@ h3 {
   }
 
   .card-list ul li:nth-of-type(1) {
-    margin-top: 10px;
+    margin-top: 20px;
   }
 
  .home-para {
@@ -431,10 +431,13 @@ h3 {
    content: '\e122';
    font-family: "FontAwesome";
  }
+
+ .what-section .top-para,
+ .how-section .top-para { text-align: center; }
 /*what section end*/
 
 /*why section start*/
-.why-section img { margin-bottom: 25px; }
+.why-section img { margin-bottom: 40px; }
 .right-why-section ul { margin-bottom: 20px; }
 
 .right-why-section ul li { 
@@ -442,7 +445,7 @@ h3 {
   font-size: 12px;
  }
 
-.right-why-section .top-para { margin-bottom: 10px; }
+.right-why-section .top-para { margin-bottom: 20px; }
 .why-section { margin-bottom: 40px; }
 /*why section end*/
 
@@ -482,12 +485,13 @@ h2 {
 h3 { 
   margin-bottom: 10px;
   color: #000;
-  font-size: 17px;
+  font-size: 20px;
  }
 
  .how-section ul li { margin-bottom: 30px; }
 
  .left-section .button-div { display: flex; }
+
 /*how section end*/
 
 /*frequent section start*/
@@ -497,7 +501,7 @@ h3 {
 
 .frequent-top-section ul li {
   width: 100%; 
-  padding: 10px 0;
+  padding: 15px 0;
   border-bottom: 1px solid #918E8E;
   font-size: 13px;
  }
@@ -697,6 +701,8 @@ h6 { color: #000; }
 h5 { 
   margin-bottom: 10px;
   color: #000;
+  font-size: 18px;
+  text-transform: capitalize;
 }
 
 .services,
@@ -705,7 +711,7 @@ h5 {
   display: flex;
   flex-direction: column;
   font-size: 14px;
-  gap: 4px;
+  gap: 10px;
 }
 
 .services span { text-transform: uppercase; }
