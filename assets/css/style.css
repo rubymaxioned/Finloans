@@ -1069,5 +1069,21 @@ form p:last-of-type { margin-bottom: 20px; }
   text-align: center;
 }
 
+.why-section img { flex-basis: 40%; }
+.right-why-section { flex-basis: 60%; }
+.why-section .wrapper { gap: 60px; }
+
+.top-para { 
+  font-size: 18px; 
+  line-height: 30px;
+}
+
+h3 { margin-bottom: 20px; }
+
+.right-why-section ul { gap: 15px; }
+.right-why-section ul li { font-size: 15px; }
+.right-why-section .blue-btn {
+  padding: 10px 11%;
+}
 }
  
