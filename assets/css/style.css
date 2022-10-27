@@ -1111,7 +1111,11 @@ h3 { margin-bottom: 20px; }
     padding-left: 54px; 
   }
 
+  h1 { font-size: 21px; }
+  nav { padding-left: 72px; }
+  nav ul li a { font-size: 10px; }
   .nav-links { gap: 23px; }
+  .tel-section { padding-right: 10px; }
   .tel-section li a { font-size: 11px; }
   .tel-section li:nth-child(2) { border-radius: 5px; }
   .tel-section li:nth-child(2) a { padding: 10px 5px; }
