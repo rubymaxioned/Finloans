@@ -344,7 +344,7 @@ h3::after {
 
 .card-list ul {
   width: 100%;
-  border-top: 1px solid;
+  border-top: 1px solid #2375BE;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -1011,7 +1011,7 @@ form p:last-of-type { margin-bottom: 20px; }
   .tel-section li:nth-child(2) a:hover { color: #fff}
 
   .blue-btn:hover {
-    color: #000;
+    color: #0C4479;
   }
 
   .subscribe:hover { color: #000; }
@@ -1094,7 +1094,7 @@ h3 { margin-bottom: 20px; }
 }
  
 /*media query for 1080px starts here*/
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1080px) {
 
   header .wrapper {
     width: 95%;
@@ -1119,6 +1119,7 @@ h3 { margin-bottom: 20px; }
   .tel-section li a { font-size: 11px; }
   .tel-section li:nth-child(2) { border-radius: 5px; }
   .tel-section li:nth-child(2) a { padding: 10px 5px; }
+
 
   .banner-section .wrapper {
     width: 82%;
@@ -1371,4 +1372,75 @@ h3 { margin-bottom: 20px; }
    .footer-right-section h5 { margin-bottom: 32px; }
    form p:last-of-type { line-height: 20px; }
    .subscribe { margin-right: 5px; }
+}
+
+
+/*media query for 1347px starts here*/
+@media only screen and (min-width: 1347px) {
+
+.logo img {
+  width: 45px;
+  height: 45px;
+}
+
+nav ul li a { font-size: 13px; }
+.tel-section { padding-right: 15px; }
+
+.tel-section li:nth-child(2) a {
+  padding: 10px 5px;
+  font-size: 14px;
+}
+
+.tel-section li a { font-size: 13.5px; }
+.left-section { padding: 90px 0 25px 0; }
+
+.left-section h2 {
+  margin-bottom: 40px;
+  font-size: 59px;
+  line-height: 70px;
+}
+
+.right-section p:first-child { font-size: 30px; }
+.right-section { padding-top: 50px; }
+
+.right-section p:nth-of-type(2) { 
+  font-size: 15px;
+  margin-bottom: 40px;
+ }
+  
+ form select { padding: 15px 4%; }
+ .amounts { margin-bottom: 15px; }
+ form p:last-of-type { font-size: 16px; }
+
+ .calender,
+ form p:last-of-type { margin-bottom: 40px; }
+
+ .banner-section .right-section .button-div a {
+  display: inline-block;
+  padding: 25px 40%;
+ }
+
+ h3 { 
+   margin-bottom: 13px;
+   font-size: 43px;
+   }
+
+ h3::after { bottom: 56px; }
+.what-section .top-para { font-size: 16px; }
+.top-para { margin-bottom: 90px; }
+.home-para { font-size: 15px; }
+
+.amount-para { 
+  margin-bottom: 31px;
+  font-size: 28px;
+}
+
+ .blue-btn { font-size: 16px;}
+
+ .card-list a {
+  width: 75%;
+  height: 50px;
+}
+
+.blue-btn { padding: 15px 5%; }
 }
