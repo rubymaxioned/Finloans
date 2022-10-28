@@ -259,6 +259,7 @@ form {
 select { width: 80%; }
 .amounts { margin-bottom: 10px; }
 .calender { margin-bottom: 15px; }
+select:focus { outline: none; }
 
 form p:last-of-type { 
   margin-bottom: 10px;
@@ -298,7 +299,7 @@ h3::after {
   height: 2px;
   display: inline-block;
   position: absolute;
-  bottom: 23px;
+  bottom: 26px;
   left: 50%;
   content: '';
   background-color: #33D4D6;
@@ -431,6 +432,8 @@ h3::after {
 
 .right-why-section .top-para { margin-bottom: 20px; }
 .why-section { margin-bottom: 40px; }
+.right-why-section h3::after,
+.accordian h3::after { display: none; }
 /*why section end*/
 
 /*how section start*/
@@ -477,6 +480,8 @@ h3 {
 
 .how-section ul li { margin-bottom: 30px; }
 .left-section .button-div { display: flex; }
+.how-section ul li { text-align: center; }
+.how-section ul li a { margin: 0  auto 20px; }
 /*how section end*/
 
 /*frequent section start*/
@@ -758,6 +763,8 @@ h5 {
   border: none;
 }
 
+.form-section input:focus { outline: none; }
+
 .footer-bottom p { 
   margin-top: 50px;
   font-size: 13px;
@@ -765,6 +772,15 @@ h5 {
 
 .footer-logo p { color: #000; } 
 .footer-right-section form a { background: #0B7EE5; }
+
+.footer-logo,
+.footer-social-links ul { justify-content: center; }
+
+.footer-address,
+.services,
+.useful-links { align-items: center; }
+
+.useful-links { text-transform: capitalize; }
  /*=================================
   footer styling ends here
 =================================*/ 
@@ -847,7 +863,7 @@ h2 {
 form p:last-of-type { margin-bottom: 20px; }
 
 .button-div {
-  width: 100px;
+  /* width: 100px; */
   display: flex;
   justify-content: center;
 }
@@ -1088,6 +1104,11 @@ nav {
 }
 
 h1 { font-size: 21px; }
+
+h1 a:hover,
+nav ul li a:hover { color: #33D4D6 }
+
+.tel-section li a:hover { color: #fff; }
 nav { padding-left: 72px; }
 nav ul li a { font-size: 10px; }
 .nav-links { gap: 23px; }
@@ -1130,7 +1151,7 @@ form p:last-of-type { font-size: 12px; }
 .banner-section .right-section .button-div { width: 100%; }
 .banner-section .right-section .button-div a { 
   width: 100%; 
-  height: 37px;
+  /* height: 37px; */
 }
 
 h2 {
@@ -1391,7 +1412,7 @@ form p:last-of-type { margin-bottom: 40px; }
 
 .banner-section .right-section .button-div a {
   display: inline-block;
-  padding: 25px 40%;
+  padding: 14px 40%;
 }
 
 h3 { 
