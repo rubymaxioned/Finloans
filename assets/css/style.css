@@ -563,7 +563,9 @@ h6 { color: #000; }
  }
 
 .arrow {
+  margin-bottom: 50px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   gap: 15px;
 }
@@ -608,8 +610,6 @@ h6 { color: #000; }
   font-size: 13px;
   text-transform: capitalize;
 }
-
-.caurosel { margin-bottom: 50px; }
 
 .icon::before {
   position: absolute;
@@ -974,6 +974,7 @@ h3 { font-size: 25px; }
 }
 
 .caurosel-img::before { left: 75%; }
+.arrow { flex-direction: column; }
 /*media query for 995px starts here*/
 @media only screen and (min-width: 995px) {
 .card-list { width: 32%; }
