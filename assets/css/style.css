@@ -1052,7 +1052,9 @@ nav ul li a { color: #fff; }
   color: #fff;
 }
 
-.how-section ul li p { width: 90%; }
+.how-section ul li p { width: 100%; }
+.how-section ul li { text-align: initial; }
+.how-section ul li a { margin: 0; }
 }
 
 /*media query for 1024px starts here*/
